@@ -15,8 +15,8 @@ This is dockerization of TexLive
 
 ```console
 docker run \
-  -e "LOCAL_UID=501" \
-  -e "LOCAL_GID=20" \
+  -e "LOCAL_UID=1000" \
+  -e "LOCAL_GID=1000" \
   -v "/path/to/texsource":"/data" \
   denmor/latex pdflatex [FILE]
 
